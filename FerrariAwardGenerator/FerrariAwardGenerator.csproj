@@ -11,4 +11,10 @@
     <PackageReference Include="QuestPDF" Version="2023.12.6" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Images\Ferrari logo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
