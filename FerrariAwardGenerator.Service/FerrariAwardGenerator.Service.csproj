@@ -8,7 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="PDFGenerator\" />
+    <Folder Include="PDFGenerator\Classes\" />
+    <Folder Include="PDFGenerator\Images\" />
+    <Folder Include="PDFGenerator\Services\" />
   </ItemGroup>
 
   <ItemGroup>

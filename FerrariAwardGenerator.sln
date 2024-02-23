@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FerrariAwardGenerator.Servi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FerrariAwardGenerator.Service.Tests", "FerrariAwardGenerator.Service.Tests\FerrariAwardGenerator.Service.Tests.csproj", "{80E17F0D-CB29-4D67-86F5-EC339FA5FF3C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FerrariAwardGenerator.Ui", "FerrariAwardGenerator.Ui\FerrariAwardGenerator.Ui.csproj", "{49879588-AC98-417E-A0C7-8624B1A68E62}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{80E17F0D-CB29-4D67-86F5-EC339FA5FF3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80E17F0D-CB29-4D67-86F5-EC339FA5FF3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80E17F0D-CB29-4D67-86F5-EC339FA5FF3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49879588-AC98-417E-A0C7-8624B1A68E62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49879588-AC98-417E-A0C7-8624B1A68E62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49879588-AC98-417E-A0C7-8624B1A68E62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49879588-AC98-417E-A0C7-8624B1A68E62}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
