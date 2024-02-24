@@ -187,7 +187,7 @@
             // tbLastName
             // 
             tbLastName.Enabled = false;
-            tbLastName.Location = new Point(1006, 149);
+            tbLastName.Location = new Point(1006, 158);
             tbLastName.Name = "tbLastName";
             tbLastName.Size = new Size(261, 35);
             tbLastName.TabIndex = 14;
@@ -195,7 +195,7 @@
             // lblLastName
             // 
             lblLastName.AutoSize = true;
-            lblLastName.Location = new Point(830, 154);
+            lblLastName.Location = new Point(830, 163);
             lblLastName.Name = "lblLastName";
             lblLastName.Size = new Size(123, 30);
             lblLastName.TabIndex = 13;
@@ -204,7 +204,7 @@
             // tbAddress
             // 
             tbAddress.Enabled = false;
-            tbAddress.Location = new Point(1006, 200);
+            tbAddress.Location = new Point(1006, 223);
             tbAddress.Name = "tbAddress";
             tbAddress.Size = new Size(261, 35);
             tbAddress.TabIndex = 16;
@@ -212,7 +212,7 @@
             // lblAddress
             // 
             lblAddress.AutoSize = true;
-            lblAddress.Location = new Point(830, 205);
+            lblAddress.Location = new Point(830, 228);
             lblAddress.Name = "lblAddress";
             lblAddress.Size = new Size(98, 30);
             lblAddress.TabIndex = 15;
@@ -221,7 +221,7 @@
             // tbCity
             // 
             tbCity.Enabled = false;
-            tbCity.Location = new Point(1006, 256);
+            tbCity.Location = new Point(1006, 289);
             tbCity.Name = "tbCity";
             tbCity.Size = new Size(261, 35);
             tbCity.TabIndex = 18;
@@ -229,7 +229,7 @@
             // lblCity
             // 
             lblCity.AutoSize = true;
-            lblCity.Location = new Point(830, 261);
+            lblCity.Location = new Point(830, 294);
             lblCity.Name = "lblCity";
             lblCity.Size = new Size(53, 30);
             lblCity.TabIndex = 17;
@@ -238,7 +238,7 @@
             // tbState
             // 
             tbState.Enabled = false;
-            tbState.Location = new Point(1006, 303);
+            tbState.Location = new Point(1006, 354);
             tbState.Name = "tbState";
             tbState.Size = new Size(261, 35);
             tbState.TabIndex = 20;
@@ -246,7 +246,7 @@
             // lblState
             // 
             lblState.AutoSize = true;
-            lblState.Location = new Point(830, 308);
+            lblState.Location = new Point(830, 359);
             lblState.Name = "lblState";
             lblState.Size = new Size(70, 30);
             lblState.TabIndex = 19;
@@ -255,7 +255,7 @@
             // tbCarYear
             // 
             tbCarYear.Enabled = false;
-            tbCarYear.Location = new Point(1006, 364);
+            tbCarYear.Location = new Point(1006, 419);
             tbCarYear.Name = "tbCarYear";
             tbCarYear.Size = new Size(261, 35);
             tbCarYear.TabIndex = 22;
@@ -263,7 +263,7 @@
             // lblCarYear
             // 
             lblCarYear.AutoSize = true;
-            lblCarYear.Location = new Point(830, 369);
+            lblCarYear.Location = new Point(830, 424);
             lblCarYear.Name = "lblCarYear";
             lblCarYear.Size = new Size(100, 30);
             lblCarYear.TabIndex = 21;
@@ -272,7 +272,7 @@
             // tbCarModel
             // 
             tbCarModel.Enabled = false;
-            tbCarModel.Location = new Point(1006, 423);
+            tbCarModel.Location = new Point(1006, 492);
             tbCarModel.Name = "tbCarModel";
             tbCarModel.Size = new Size(261, 35);
             tbCarModel.TabIndex = 24;
@@ -280,7 +280,7 @@
             // lblCarModel
             // 
             lblCarModel.AutoSize = true;
-            lblCarModel.Location = new Point(830, 428);
+            lblCarModel.Location = new Point(830, 497);
             lblCarModel.Name = "lblCarModel";
             lblCarModel.Size = new Size(120, 30);
             lblCarModel.TabIndex = 23;
@@ -289,7 +289,7 @@
             // tbCarStyle
             // 
             tbCarStyle.Enabled = false;
-            tbCarStyle.Location = new Point(1006, 482);
+            tbCarStyle.Location = new Point(1006, 561);
             tbCarStyle.Name = "tbCarStyle";
             tbCarStyle.Size = new Size(261, 35);
             tbCarStyle.TabIndex = 26;
@@ -298,7 +298,7 @@
             // 
             lblCarBodyStyle.AutoSize = true;
             lblCarBodyStyle.Font = new Font("Segoe UI", 9F);
-            lblCarBodyStyle.Location = new Point(830, 485);
+            lblCarBodyStyle.Location = new Point(830, 564);
             lblCarBodyStyle.Name = "lblCarBodyStyle";
             lblCarBodyStyle.Size = new Size(119, 30);
             lblCarBodyStyle.TabIndex = 25;
@@ -307,7 +307,7 @@
             // tbSerialNumber
             // 
             tbSerialNumber.Enabled = false;
-            tbSerialNumber.Location = new Point(1006, 537);
+            tbSerialNumber.Location = new Point(1006, 632);
             tbSerialNumber.Name = "tbSerialNumber";
             tbSerialNumber.Size = new Size(261, 35);
             tbSerialNumber.TabIndex = 28;
@@ -315,7 +315,7 @@
             // lblSerialNumber
             // 
             lblSerialNumber.AutoSize = true;
-            lblSerialNumber.Location = new Point(830, 542);
+            lblSerialNumber.Location = new Point(830, 637);
             lblSerialNumber.Name = "lblSerialNumber";
             lblSerialNumber.Size = new Size(156, 30);
             lblSerialNumber.TabIndex = 27;
@@ -324,7 +324,7 @@
             // tbCarColor
             // 
             tbCarColor.Enabled = false;
-            tbCarColor.Location = new Point(1006, 602);
+            tbCarColor.Location = new Point(1006, 696);
             tbCarColor.Name = "tbCarColor";
             tbCarColor.Size = new Size(261, 35);
             tbCarColor.TabIndex = 30;
@@ -332,7 +332,7 @@
             // lblCarColor
             // 
             lblCarColor.AutoSize = true;
-            lblCarColor.Location = new Point(830, 607);
+            lblCarColor.Location = new Point(830, 701);
             lblCarColor.Name = "lblCarColor";
             lblCarColor.Size = new Size(110, 30);
             lblCarColor.TabIndex = 29;

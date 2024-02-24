@@ -19,3 +19,4 @@ An pdf file of result score sheet will appear on desktop. It will be titled "<Na
 
 
 Developer note: If column names match above but data is not being pulled in correctly, I recommend you copy all records in workbook, right click -> Format Cells -> Text.
+Tested with both .xls and .xlsx and verified working -2/24/24
