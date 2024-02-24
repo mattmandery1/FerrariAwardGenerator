@@ -38,6 +38,27 @@
             btnGeneratePDF = new Button();
             lblHelperText1 = new Label();
             lblHelperText2 = new Label();
+            lblSelectedSNInfoHeader = new Label();
+            lblFirstName = new Label();
+            tbFirstName = new TextBox();
+            tbLastName = new TextBox();
+            lblLastName = new Label();
+            tbAddress = new TextBox();
+            lblAddress = new Label();
+            tbCity = new TextBox();
+            lblCity = new Label();
+            tbState = new TextBox();
+            lblState = new Label();
+            tbCarYear = new TextBox();
+            lblCarYear = new Label();
+            tbCarModel = new TextBox();
+            lblCarModel = new Label();
+            tbCarStyle = new TextBox();
+            lblCarBodyStyle = new Label();
+            tbSerialNumber = new TextBox();
+            lblSerialNumber = new Label();
+            tbCarColor = new TextBox();
+            lblCarColor = new Label();
             SuspendLayout();
             // 
             // lblUserDirections
@@ -137,11 +158,212 @@
             lblHelperText2.TabIndex = 9;
             lblHelperText2.Text = "Award Winning Score";
             // 
+            // lblSelectedSNInfoHeader
+            // 
+            lblSelectedSNInfoHeader.AutoSize = true;
+            lblSelectedSNInfoHeader.Location = new Point(950, 20);
+            lblSelectedSNInfoHeader.Name = "lblSelectedSNInfoHeader";
+            lblSelectedSNInfoHeader.Size = new Size(242, 30);
+            lblSelectedSNInfoHeader.TabIndex = 10;
+            lblSelectedSNInfoHeader.Text = "Selected Vin Information";
+            // 
+            // lblFirstName
+            // 
+            lblFirstName.AutoSize = true;
+            lblFirstName.Location = new Point(830, 104);
+            lblFirstName.Name = "lblFirstName";
+            lblFirstName.Size = new Size(124, 30);
+            lblFirstName.TabIndex = 11;
+            lblFirstName.Text = "First Name: ";
+            // 
+            // tbFirstName
+            // 
+            tbFirstName.Enabled = false;
+            tbFirstName.Location = new Point(1006, 99);
+            tbFirstName.Name = "tbFirstName";
+            tbFirstName.Size = new Size(261, 35);
+            tbFirstName.TabIndex = 12;
+            // 
+            // tbLastName
+            // 
+            tbLastName.Enabled = false;
+            tbLastName.Location = new Point(1006, 149);
+            tbLastName.Name = "tbLastName";
+            tbLastName.Size = new Size(261, 35);
+            tbLastName.TabIndex = 14;
+            // 
+            // lblLastName
+            // 
+            lblLastName.AutoSize = true;
+            lblLastName.Location = new Point(830, 154);
+            lblLastName.Name = "lblLastName";
+            lblLastName.Size = new Size(123, 30);
+            lblLastName.TabIndex = 13;
+            lblLastName.Text = "Last Name: ";
+            // 
+            // tbAddress
+            // 
+            tbAddress.Enabled = false;
+            tbAddress.Location = new Point(1006, 200);
+            tbAddress.Name = "tbAddress";
+            tbAddress.Size = new Size(261, 35);
+            tbAddress.TabIndex = 16;
+            // 
+            // lblAddress
+            // 
+            lblAddress.AutoSize = true;
+            lblAddress.Location = new Point(830, 205);
+            lblAddress.Name = "lblAddress";
+            lblAddress.Size = new Size(98, 30);
+            lblAddress.TabIndex = 15;
+            lblAddress.Text = "Address: ";
+            // 
+            // tbCity
+            // 
+            tbCity.Enabled = false;
+            tbCity.Location = new Point(1006, 256);
+            tbCity.Name = "tbCity";
+            tbCity.Size = new Size(261, 35);
+            tbCity.TabIndex = 18;
+            // 
+            // lblCity
+            // 
+            lblCity.AutoSize = true;
+            lblCity.Location = new Point(830, 261);
+            lblCity.Name = "lblCity";
+            lblCity.Size = new Size(53, 30);
+            lblCity.TabIndex = 17;
+            lblCity.Text = "City:";
+            // 
+            // tbState
+            // 
+            tbState.Enabled = false;
+            tbState.Location = new Point(1006, 303);
+            tbState.Name = "tbState";
+            tbState.Size = new Size(261, 35);
+            tbState.TabIndex = 20;
+            // 
+            // lblState
+            // 
+            lblState.AutoSize = true;
+            lblState.Location = new Point(830, 308);
+            lblState.Name = "lblState";
+            lblState.Size = new Size(70, 30);
+            lblState.TabIndex = 19;
+            lblState.Text = "State: ";
+            // 
+            // tbCarYear
+            // 
+            tbCarYear.Enabled = false;
+            tbCarYear.Location = new Point(1006, 364);
+            tbCarYear.Name = "tbCarYear";
+            tbCarYear.Size = new Size(261, 35);
+            tbCarYear.TabIndex = 22;
+            // 
+            // lblCarYear
+            // 
+            lblCarYear.AutoSize = true;
+            lblCarYear.Location = new Point(830, 369);
+            lblCarYear.Name = "lblCarYear";
+            lblCarYear.Size = new Size(100, 30);
+            lblCarYear.TabIndex = 21;
+            lblCarYear.Text = "Car Year: ";
+            // 
+            // tbCarModel
+            // 
+            tbCarModel.Enabled = false;
+            tbCarModel.Location = new Point(1006, 423);
+            tbCarModel.Name = "tbCarModel";
+            tbCarModel.Size = new Size(261, 35);
+            tbCarModel.TabIndex = 24;
+            // 
+            // lblCarModel
+            // 
+            lblCarModel.AutoSize = true;
+            lblCarModel.Location = new Point(830, 428);
+            lblCarModel.Name = "lblCarModel";
+            lblCarModel.Size = new Size(120, 30);
+            lblCarModel.TabIndex = 23;
+            lblCarModel.Text = "Car Model: ";
+            // 
+            // tbCarStyle
+            // 
+            tbCarStyle.Enabled = false;
+            tbCarStyle.Location = new Point(1006, 482);
+            tbCarStyle.Name = "tbCarStyle";
+            tbCarStyle.Size = new Size(261, 35);
+            tbCarStyle.TabIndex = 26;
+            // 
+            // lblCarBodyStyle
+            // 
+            lblCarBodyStyle.AutoSize = true;
+            lblCarBodyStyle.Font = new Font("Segoe UI", 9F);
+            lblCarBodyStyle.Location = new Point(830, 485);
+            lblCarBodyStyle.Name = "lblCarBodyStyle";
+            lblCarBodyStyle.Size = new Size(119, 30);
+            lblCarBodyStyle.TabIndex = 25;
+            lblCarBodyStyle.Text = "Body Style: ";
+            // 
+            // tbSerialNumber
+            // 
+            tbSerialNumber.Enabled = false;
+            tbSerialNumber.Location = new Point(1006, 537);
+            tbSerialNumber.Name = "tbSerialNumber";
+            tbSerialNumber.Size = new Size(261, 35);
+            tbSerialNumber.TabIndex = 28;
+            // 
+            // lblSerialNumber
+            // 
+            lblSerialNumber.AutoSize = true;
+            lblSerialNumber.Location = new Point(830, 542);
+            lblSerialNumber.Name = "lblSerialNumber";
+            lblSerialNumber.Size = new Size(156, 30);
+            lblSerialNumber.TabIndex = 27;
+            lblSerialNumber.Text = "Serial Number: ";
+            // 
+            // tbCarColor
+            // 
+            tbCarColor.Enabled = false;
+            tbCarColor.Location = new Point(1006, 602);
+            tbCarColor.Name = "tbCarColor";
+            tbCarColor.Size = new Size(261, 35);
+            tbCarColor.TabIndex = 30;
+            // 
+            // lblCarColor
+            // 
+            lblCarColor.AutoSize = true;
+            lblCarColor.Location = new Point(830, 607);
+            lblCarColor.Name = "lblCarColor";
+            lblCarColor.Size = new Size(110, 30);
+            lblCarColor.TabIndex = 29;
+            lblCarColor.Text = "Car Color: ";
+            // 
             // VinAndScoreEntry
             // 
             AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 947);
+            ClientSize = new Size(1294, 947);
+            Controls.Add(tbCarColor);
+            Controls.Add(lblCarColor);
+            Controls.Add(tbSerialNumber);
+            Controls.Add(lblSerialNumber);
+            Controls.Add(tbCarStyle);
+            Controls.Add(lblCarBodyStyle);
+            Controls.Add(tbCarModel);
+            Controls.Add(lblCarModel);
+            Controls.Add(tbCarYear);
+            Controls.Add(lblCarYear);
+            Controls.Add(tbState);
+            Controls.Add(lblState);
+            Controls.Add(tbCity);
+            Controls.Add(lblCity);
+            Controls.Add(tbAddress);
+            Controls.Add(lblAddress);
+            Controls.Add(tbLastName);
+            Controls.Add(lblLastName);
+            Controls.Add(tbFirstName);
+            Controls.Add(lblFirstName);
+            Controls.Add(lblSelectedSNInfoHeader);
             Controls.Add(lblHelperText2);
             Controls.Add(lblHelperText1);
             Controls.Add(btnGeneratePDF);
@@ -171,5 +393,26 @@
         private Button btnGeneratePDF;
         private Label lblHelperText1;
         private Label lblHelperText2;
+        private Label lblSelectedSNInfoHeader;
+        private Label lblFirstName;
+        private TextBox tbFirstName;
+        private TextBox tbLastName;
+        private Label lblLastName;
+        private TextBox tbAddress;
+        private Label lblAddress;
+        private TextBox tbCity;
+        private Label lblCity;
+        private TextBox tbState;
+        private Label lblState;
+        private TextBox tbCarYear;
+        private Label lblCarYear;
+        private TextBox tbCarModel;
+        private Label lblCarModel;
+        private TextBox tbCarStyle;
+        private Label lblCarBodyStyle;
+        private TextBox tbSerialNumber;
+        private Label lblSerialNumber;
+        private TextBox tbCarColor;
+        private Label lblCarColor;
     }
 }

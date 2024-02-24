@@ -22,7 +22,7 @@ namespace FerrariAwardGenerator.Service.ExcelImport.Models
         public int Year1 { get; set; }
         public string Model1 { get; set; }
         public string SerialNumber1 { get; set; }
-        public string BodyStyle { get; set; }
+        public string BodyStyle1 { get; set; }
         public string Coachbuild { get; set; }
         public string CarColor1 { get; set; }
     }

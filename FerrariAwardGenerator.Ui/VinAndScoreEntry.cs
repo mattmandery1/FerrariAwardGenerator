@@ -23,7 +23,34 @@ namespace FerrariAwardGenerator.Ui
 
         private void cbVinEntry1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            var selectedSN = cbVinEntry1.GetItemText(cbVinEntry1.SelectedItem);
+            var excelResultsforSelectedSn = _excelResults.Where(x => x.SerialNumber1 == selectedSN).FirstOrDefault();
+            if(excelResultsforSelectedSn != null)
+            {
+                tbFirstName.Text = excelResultsforSelectedSn.FirstName;
+                tbLastName.Text = excelResultsforSelectedSn.LastName;
+                tbAddress.Text = excelResultsforSelectedSn.Address;
+                tbCity.Text = excelResultsforSelectedSn.City;
+                tbState.Text = excelResultsforSelectedSn.State;
+                tbCarColor.Text = excelResultsforSelectedSn.CarColor1;
+                tbCarModel.Text = excelResultsforSelectedSn.Model1;
+                tbSerialNumber.Text = excelResultsforSelectedSn.SerialNumber1;
+                tbCarYear.Text = excelResultsforSelectedSn.Year1.ToString();
+                tbCarStyle.Text = excelResultsforSelectedSn.BodyStyle1;
+            }
+            else
+            {
+                tbFirstName.Text = "";
+                tbLastName.Text = "";
+                tbAddress.Text = "";
+                tbCity.Text = "";
+                tbState.Text = "";
+                tbCarColor.Text = "";
+                tbCarModel.Text = "";
+                tbSerialNumber.Text = "";
+                tbCarYear.Text = "";
+                tbCarStyle.Text = "";
+            }
         }
 
         private void VinAndScoreEntry_Load(object sender, EventArgs e)
@@ -64,6 +91,10 @@ namespace FerrariAwardGenerator.Ui
                 flpScoreResults.Controls.Add(textBox2);
 
                 _comboItems.Add(new FinalScoreItems { SerialNumber = textBox1.Text, Score = int.Parse(tbScore.Text) });
+
+                cbVinEntry1.SelectedIndex = 0;
+                cbVinEntry1.SelectedValue = "";
+                tbScore.Text = "";
             }
         }
 
@@ -81,7 +112,10 @@ namespace FerrariAwardGenerator.Ui
             var results = GenerateScoreResultsObjects();
 
             //Save PDF to desktop
-            _pdfGeneratorService.GenerateFerrariAwardPDF(results, _judgingInfo);
+            string savePath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\" + _judgingInfo.ClassInfo + ".pdf";
+            _pdfGeneratorService.GenerateFerrariAwardPDF(results, _judgingInfo, savePath);
+            SuccessMessage success = new SuccessMessage(savePath);
+            success.Show();
 
         }
 

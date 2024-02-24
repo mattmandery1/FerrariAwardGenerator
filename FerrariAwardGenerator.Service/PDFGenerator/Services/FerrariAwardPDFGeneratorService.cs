@@ -18,7 +18,7 @@ namespace FerrariAwardGenerator.Service.PDFGenerator.Services
 
         }
 
-        public void GenerateFerrariAwardPDF(List<ScoreResults> ScoreResults, JudgingInfo judgingInfo)
+        public void GenerateFerrariAwardPDF(List<ScoreResults> ScoreResults, JudgingInfo judgingInfo, string savePath)
         {
             ScoreResults = ScoreResults.OrderByDescending(x => x.Score).ToList();
             QuestPDF.Settings.License = LicenseType.Community;
@@ -129,7 +129,7 @@ namespace FerrariAwardGenerator.Service.PDFGenerator.Services
             })
                 //.ShowInPreviewer();
                 
-                .GeneratePdf(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\" + judgingInfo.ClassInfo + ".pdf");
+                .GeneratePdf(savePath);
         }
     }
 }
