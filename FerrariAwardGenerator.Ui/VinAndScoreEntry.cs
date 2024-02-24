@@ -110,17 +110,21 @@ namespace FerrariAwardGenerator.Ui
 
         private void SetGradeBasedOnScore(ScoreResults result)
         {
-            if(result.Score > 90)
+            if(result.Score >= 90)
             {
                 result.CalculatedGrade = "Platinum";
             }
-            else if (result.Score <= 89 && result.Score > 80)
+            else if (result.Score < 90 && result.Score >= 80)
             {
                 result.CalculatedGrade = "Gold";
             }
-            else if (result.Score <= 79 && result.Score > 70)
+            else if (result.Score < 80 && result.Score >= 70)
             {
                 result.CalculatedGrade = "Silver";
+            }
+            else
+            {
+                result.CalculatedGrade = "N/A";
             }
         }
     }

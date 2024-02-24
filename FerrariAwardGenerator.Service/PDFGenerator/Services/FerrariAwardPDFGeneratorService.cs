@@ -20,6 +20,7 @@ namespace FerrariAwardGenerator.Service.PDFGenerator.Services
 
         public void GenerateFerrariAwardPDF(List<ScoreResults> ScoreResults, JudgingInfo judgingInfo)
         {
+            ScoreResults = ScoreResults.OrderByDescending(x => x.Score).ToList();
             QuestPDF.Settings.License = LicenseType.Community;
 
             Document.Create(container =>
