@@ -1,5 +1,6 @@
 using FerrariAwardGenerator.Service.ExcelImport.Models;
 using FerrariAwardGenerator.Service.ExcelImport.Services;
+using FerrariAwardGenerator.Service.PDFGenerator.Classes;
 
 namespace FerrariAwardGenerator.Ui
 {
@@ -82,8 +83,14 @@ namespace FerrariAwardGenerator.Ui
                     lblError.Visible = true;
                     return;
                 }
-
-                VinAndScoreEntry entryScreen = new VinAndScoreEntry(excelFileRecords);
+                JudgingInfo judgingInfo = new JudgingInfo
+                {
+                    CCJ = _ccj,
+                    Judge1Name = _judge1,
+                    Judge2Name = _judge2,
+                    ClassInfo = _judgingClassInfo
+                };
+                VinAndScoreEntry entryScreen = new VinAndScoreEntry(excelFileRecords, judgingInfo);
                 entryScreen.Show();
 
             }

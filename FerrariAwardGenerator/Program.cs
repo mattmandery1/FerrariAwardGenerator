@@ -129,8 +129,9 @@ JudgingInfo judgingInfo = new JudgingInfo
     CCJ = "Matt Mandery",
     Judge1Name = "Marv Landon",
     Judge2Name = "Hayden Landon",
-    ClassInfo = "Class 2 - Tester to Today"
+    ClassInfo = "Class 2 - New Test"
 };
+string filePath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\" + judgingInfo.ClassInfo + ".pdf";
 
 QuestPDF.Settings.License = LicenseType.Community;
 
@@ -238,4 +239,5 @@ Document.Create(container =>
     });
 
 })
-    .ShowInPreviewer();
+        //.ShowInPreviewer();
+        .GeneratePdf(filePath);

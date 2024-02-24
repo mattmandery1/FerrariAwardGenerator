@@ -1,6 +1,5 @@
 ﻿using FerrariAwardGenerator.Service.ExcelImport.Models;
 using Ganss.Excel;
-using System.Data;
 
 namespace FerrariAwardGenerator.Service.ExcelImport.Services
 {

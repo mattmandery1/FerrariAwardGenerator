@@ -4,18 +4,19 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Folder Include="PDFGenerator\Classes\" />
-    <Folder Include="PDFGenerator\Images\" />
-    <Folder Include="PDFGenerator\Services\" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="ExcelMapper" Version="5.2.568" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="QuestPDF" Version="2023.12.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="PDFGenerator\Images\Ferrari logo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

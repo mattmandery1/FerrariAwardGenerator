@@ -36,6 +36,8 @@
             lblScoreHelperText = new Label();
             btnAddSNToFinalList = new Button();
             btnGeneratePDF = new Button();
+            lblHelperText1 = new Label();
+            lblHelperText2 = new Label();
             SuspendLayout();
             // 
             // lblUserDirections
@@ -72,9 +74,9 @@
             // 
             // flpScoreResults
             // 
-            flpScoreResults.Location = new Point(31, 267);
+            flpScoreResults.Location = new Point(31, 308);
             flpScoreResults.Name = "flpScoreResults";
-            flpScoreResults.Size = new Size(724, 545);
+            flpScoreResults.Size = new Size(724, 504);
             flpScoreResults.TabIndex = 3;
             flpScoreResults.Paint += flpScoreResults_Paint;
             // 
@@ -114,12 +116,34 @@
             btnGeneratePDF.TabIndex = 7;
             btnGeneratePDF.Text = "Generate Award PDF";
             btnGeneratePDF.UseVisualStyleBackColor = true;
+            btnGeneratePDF.Click += btnGeneratePDF_Click;
+            // 
+            // lblHelperText1
+            // 
+            lblHelperText1.AutoSize = true;
+            lblHelperText1.Location = new Point(31, 275);
+            lblHelperText1.Name = "lblHelperText1";
+            lblHelperText1.Size = new Size(308, 30);
+            lblHelperText1.TabIndex = 8;
+            lblHelperText1.Text = "Award Winning Serial Numbers:";
+            lblHelperText1.Click += label1_Click;
+            // 
+            // lblHelperText2
+            // 
+            lblHelperText2.AutoSize = true;
+            lblHelperText2.Location = new Point(398, 275);
+            lblHelperText2.Name = "lblHelperText2";
+            lblHelperText2.Size = new Size(213, 30);
+            lblHelperText2.TabIndex = 9;
+            lblHelperText2.Text = "Award Winning Score";
             // 
             // VinAndScoreEntry
             // 
             AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 947);
+            Controls.Add(lblHelperText2);
+            Controls.Add(lblHelperText1);
             Controls.Add(btnGeneratePDF);
             Controls.Add(btnAddSNToFinalList);
             Controls.Add(lblScoreHelperText);
@@ -145,5 +169,7 @@
         private Label lblScoreHelperText;
         private Button btnAddSNToFinalList;
         private Button btnGeneratePDF;
+        private Label lblHelperText1;
+        private Label lblHelperText2;
     }
 }
