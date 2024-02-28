@@ -43,6 +43,8 @@
             lblJudgingClass = new Label();
             btnNextStep = new Button();
             lblError = new Label();
+            lblAuthorInfo2 = new Label();
+            lblAuthorInfo3 = new Label();
             SuspendLayout();
             // 
             // lblWelcomeButton
@@ -60,13 +62,13 @@
             lblAuthorInfo.AutoSize = true;
             lblAuthorInfo.Location = new Point(1, 9);
             lblAuthorInfo.Name = "lblAuthorInfo";
-            lblAuthorInfo.Size = new Size(420, 30);
+            lblAuthorInfo.Size = new Size(220, 30);
             lblAuthorInfo.TabIndex = 1;
-            lblAuthorInfo.Text = "Created by mattmandery@gmail.com | 2024";
+            lblAuthorInfo.Text = "Aurhor: Matt Mandery";
             // 
             // btnFileSelector
             // 
-            btnFileSelector.Location = new Point(1035, 517);
+            btnFileSelector.Location = new Point(1024, 439);
             btnFileSelector.Name = "btnFileSelector";
             btnFileSelector.Size = new Size(353, 79);
             btnFileSelector.TabIndex = 2;
@@ -76,7 +78,7 @@
             // 
             // tbSelectedFilePath
             // 
-            tbSelectedFilePath.Location = new Point(1412, 561);
+            tbSelectedFilePath.Location = new Point(1401, 483);
             tbSelectedFilePath.Name = "tbSelectedFilePath";
             tbSelectedFilePath.ReadOnly = true;
             tbSelectedFilePath.Size = new Size(823, 35);
@@ -90,7 +92,7 @@
             // 
             lblCcj.AutoSize = true;
             lblCcj.Font = new Font("Segoe UI", 14F);
-            lblCcj.Location = new Point(170, 325);
+            lblCcj.Location = new Point(207, 325);
             lblCcj.Name = "lblCcj";
             lblCcj.Size = new Size(71, 45);
             lblCcj.TabIndex = 4;
@@ -100,7 +102,7 @@
             // 
             lblJudge1.AutoSize = true;
             lblJudge1.Font = new Font("Segoe UI", 14F);
-            lblJudge1.Location = new Point(145, 473);
+            lblJudge1.Location = new Point(145, 474);
             lblJudge1.Name = "lblJudge1";
             lblJudge1.Size = new Size(133, 45);
             lblJudge1.TabIndex = 5;
@@ -110,7 +112,7 @@
             // 
             lblJudge2.AutoSize = true;
             lblJudge2.Font = new Font("Segoe UI", 14F);
-            lblJudge2.Location = new Point(145, 615);
+            lblJudge2.Location = new Point(145, 616);
             lblJudge2.Name = "lblJudge2";
             lblJudge2.Size = new Size(133, 45);
             lblJudge2.TabIndex = 6;
@@ -142,7 +144,7 @@
             // 
             // tbJudgingClass
             // 
-            tbJudgingClass.Location = new Point(1352, 321);
+            tbJudgingClass.Location = new Point(1341, 335);
             tbJudgingClass.Name = "tbJudgingClass";
             tbJudgingClass.Size = new Size(883, 35);
             tbJudgingClass.TabIndex = 11;
@@ -152,7 +154,7 @@
             // 
             lblJudgingClass.AutoSize = true;
             lblJudgingClass.Font = new Font("Segoe UI", 14F);
-            lblJudgingClass.Location = new Point(1096, 311);
+            lblJudgingClass.Location = new Point(1085, 325);
             lblJudgingClass.Name = "lblJudgingClass";
             lblJudgingClass.Size = new Size(217, 45);
             lblJudgingClass.TabIndex = 10;
@@ -162,7 +164,7 @@
             // 
             btnNextStep.BackColor = SystemColors.Highlight;
             btnNextStep.Font = new Font("Segoe UI", 16F);
-            btnNextStep.Location = new Point(804, 672);
+            btnNextStep.Location = new Point(871, 625);
             btnNextStep.Name = "btnNextStep";
             btnNextStep.Size = new Size(1353, 112);
             btnNextStep.TabIndex = 12;
@@ -182,11 +184,31 @@
             lblError.Text = "Please enter all forms and select a valid file before moving on to next step!";
             lblError.Visible = false;
             // 
+            // lblAuthorInfo2
+            // 
+            lblAuthorInfo2.AutoSize = true;
+            lblAuthorInfo2.Location = new Point(1, 39);
+            lblAuthorInfo2.Name = "lblAuthorInfo2";
+            lblAuthorInfo2.Size = new Size(253, 30);
+            lblAuthorInfo2.TabIndex = 14;
+            lblAuthorInfo2.Text = "mattmandery@gmail.com";
+            // 
+            // lblAuthorInfo3
+            // 
+            lblAuthorInfo3.AutoSize = true;
+            lblAuthorInfo3.Location = new Point(1, 69);
+            lblAuthorInfo3.Name = "lblAuthorInfo3";
+            lblAuthorInfo3.Size = new Size(57, 30);
+            lblAuthorInfo3.TabIndex = 15;
+            lblAuthorInfo3.Text = "2024";
+            // 
             // LandingPageForm
             // 
             AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(2332, 817);
+            Controls.Add(lblAuthorInfo3);
+            Controls.Add(lblAuthorInfo2);
             Controls.Add(lblError);
             Controls.Add(btnNextStep);
             Controls.Add(tbJudgingClass);
@@ -225,5 +247,7 @@
         private Label lblJudgingClass;
         private Button btnNextStep;
         private Label lblError;
+        private Label lblAuthorInfo2;
+        private Label lblAuthorInfo3;
     }
 }
