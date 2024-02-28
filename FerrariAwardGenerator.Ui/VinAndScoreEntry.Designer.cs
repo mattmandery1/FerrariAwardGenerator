@@ -95,9 +95,10 @@
             // 
             // flpScoreResults
             // 
+            flpScoreResults.AutoScroll = true;
             flpScoreResults.Location = new Point(31, 308);
             flpScoreResults.Name = "flpScoreResults";
-            flpScoreResults.Size = new Size(724, 504);
+            flpScoreResults.Size = new Size(750, 504);
             flpScoreResults.TabIndex = 3;
             flpScoreResults.Paint += flpScoreResults_Paint;
             // 
@@ -152,7 +153,7 @@
             // lblHelperText2
             // 
             lblHelperText2.AutoSize = true;
-            lblHelperText2.Location = new Point(398, 275);
+            lblHelperText2.Location = new Point(441, 275);
             lblHelperText2.Name = "lblHelperText2";
             lblHelperText2.Size = new Size(213, 30);
             lblHelperText2.TabIndex = 9;

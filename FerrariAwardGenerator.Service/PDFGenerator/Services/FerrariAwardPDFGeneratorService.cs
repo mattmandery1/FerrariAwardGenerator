@@ -6,6 +6,7 @@ using QuestPDF.Previewer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -15,7 +16,6 @@ namespace FerrariAwardGenerator.Service.PDFGenerator.Services
     {
         public FerrariAwardPDFGeneratorService()
         {
-
         }
 
         public void GenerateFerrariAwardPDF(List<ScoreResults> ScoreResults, JudgingInfo judgingInfo, string savePath)
@@ -43,7 +43,7 @@ namespace FerrariAwardGenerator.Service.PDFGenerator.Services
                                 columns.RelativeColumn();
                             });
 
-                            table.Cell().RowSpan(1).ColumnSpan(1).Element(HeaderBlock).Width(91).Height(181).Image("G:\\VS Projects\\FerrariAwardGenerator\\FerrariAwardGenerator\\Images\\Ferrari logo.png");
+                            table.Cell().RowSpan(1).ColumnSpan(1).Element(HeaderBlock).Width(91).Height(181).Image(Path.Combine(AppDomain.CurrentDomain.BaseDirectory + "PDFGenerator\\Images\\Ferrarilogo.png"));
                             table.Cell().RowSpan(1).ColumnSpan(2).Element(HeaderBlock).AlignCenter().Text(text =>
                             {
                                 text.Line("Concorso Ferrari " + DateTime.Now.Year.ToString()).SemiBold().FontSize(26).FontColor(Colors.Black).Underline();

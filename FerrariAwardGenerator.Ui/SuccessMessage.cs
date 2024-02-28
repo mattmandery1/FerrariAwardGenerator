@@ -15,12 +15,20 @@ namespace FerrariAwardGenerator.Ui
         public SuccessMessage(string savePath)
         {
             InitializeComponent();
-            lblSavedAt.Text = "PDF saved to: " + savePath;
+            SetSaveLabelInfo(savePath);
         }
 
         private void btnExitProgram_Click(object sender, EventArgs e)
         {
-            System.Environment.Exit(1);
+            //System.Environment.Exit(1);
+            this.Close();
+        }
+
+        private void SetSaveLabelInfo(string savePath)
+        {
+            lblSavedAt.MaximumSize = new Size(1000, 0);
+            lblSavedAt.AutoSize = true;
+            lblSavedAt.Text = "PDF saved to: " + savePath;
         }
     }
 }

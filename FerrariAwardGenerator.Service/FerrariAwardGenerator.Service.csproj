@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="PDFGenerator\Images\Ferrari logo.png">
+    <None Update="PDFGenerator\Images\Ferrarilogo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

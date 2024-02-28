@@ -2,6 +2,7 @@
 using FerrariAwardGenerator.Service.PDFGenerator.Classes;
 using FerrariAwardGenerator.Service.PDFGenerator.Services;
 using FerrariAwardGenerator.Ui.Models;
+using NPOI.SS.UserModel;
 
 namespace FerrariAwardGenerator.Ui
 {
@@ -69,7 +70,9 @@ namespace FerrariAwardGenerator.Ui
         private void flpScoreResults_Paint(object sender, PaintEventArgs e)
         {
             flpScoreResults.FlowDirection = FlowDirection.LeftToRight;
-
+            flpScoreResults.Width = 750;
+            flpScoreResults.Padding = Padding.Empty;
+            flpScoreResults.Margin = Padding.Empty;
         }
 
         private void btnAddSNToFinalList_Click(object sender, EventArgs e)
@@ -80,12 +83,12 @@ namespace FerrariAwardGenerator.Ui
                 TextBox textBox1 = new TextBox();
                 textBox1.Text = cbVinEntry1.GetItemText(cbVinEntry1.SelectedItem);
                 textBox1.Enabled = false;
-                textBox1.Size = new Size(350, 20);
+                textBox1.Size = new Size(365, 20);
 
                 TextBox textBox2 = new TextBox();
                 textBox2.Text = tbScore.Text;
                 textBox2.Enabled = false;
-                textBox2.Size = new Size(350, 20);
+                textBox2.Size = new Size(365, 20);
 
                 flpScoreResults.Controls.Add(textBox1);
                 flpScoreResults.Controls.Add(textBox2);
@@ -116,6 +119,7 @@ namespace FerrariAwardGenerator.Ui
             _pdfGeneratorService.GenerateFerrariAwardPDF(results, _judgingInfo, savePath);
             SuccessMessage success = new SuccessMessage(savePath);
             success.Show();
+            this.Close();
 
         }
 

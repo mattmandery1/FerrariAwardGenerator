@@ -48,6 +48,7 @@
             lblSavedAt.AutoSize = true;
             lblSavedAt.Font = new Font("Segoe UI", 9F);
             lblSavedAt.Location = new Point(12, 120);
+            lblSavedAt.MaximumSize = new Size(1000, 100);
             lblSavedAt.Name = "lblSavedAt";
             lblSavedAt.Size = new Size(145, 30);
             lblSavedAt.TabIndex = 1;
@@ -59,7 +60,7 @@
             btnExitProgram.Name = "btnExitProgram";
             btnExitProgram.Size = new Size(247, 101);
             btnExitProgram.TabIndex = 2;
-            btnExitProgram.Text = "Exit Program";
+            btnExitProgram.Text = "Start New Class Award Sheet";
             btnExitProgram.UseVisualStyleBackColor = true;
             btnExitProgram.Click += btnExitProgram_Click;
             // 
