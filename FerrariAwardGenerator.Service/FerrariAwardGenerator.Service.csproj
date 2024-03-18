@@ -17,9 +17,6 @@
     <None Update="PDFGenerator\Images\Ferrari30yrs.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="PDFGenerator\Images\Ferrarilogo.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Update="PDFGenerator\Images\Ferrarireg.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
