@@ -20,6 +20,7 @@ namespace FerrariAwardGenerator.Service.PDFGenerator.Services
 
         public void GenerateFerrariAwardPDF(List<ScoreResults> ScoreResults, JudgingInfo judgingInfo, string savePath)
         {
+            var currentYear = DateTime.Now.Year;
             ScoreResults = ScoreResults.OrderByDescending(x => x.Score).ToList();
             QuestPDF.Settings.License = LicenseType.Community;
 
@@ -43,7 +44,15 @@ namespace FerrariAwardGenerator.Service.PDFGenerator.Services
                                 columns.RelativeColumn();
                             });
 
-                            table.Cell().RowSpan(1).ColumnSpan(1).Element(HeaderBlock).Width(91).Height(181).Image(Path.Combine(AppDomain.CurrentDomain.BaseDirectory + "PDFGenerator\\Images\\Ferrarilogo.png"));
+                            if(currentYear > 2024)
+                            {
+                                table.Cell().RowSpan(1).ColumnSpan(1).Element(HeaderBlock).Width(165).Height(250).Image(Path.Combine(AppDomain.CurrentDomain.BaseDirectory + "PDFGenerator\\Images\\Ferrarireg.png"));
+                            }
+                            else
+                            {
+                                table.Cell().RowSpan(1).ColumnSpan(1).Element(HeaderBlock).Width(165).Height(250).Image(Path.Combine(AppDomain.CurrentDomain.BaseDirectory + "PDFGenerator\\Images\\Ferrari30yrs.png"));
+                            }
+                            
                             table.Cell().RowSpan(1).ColumnSpan(2).Element(HeaderBlock).AlignCenter().Text(text =>
                             {
                                 text.Line("Concorso Ferrari " + DateTime.Now.Year.ToString()).SemiBold().FontSize(26).FontColor(Colors.Black).Underline();

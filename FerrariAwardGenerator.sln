@@ -5,11 +5,11 @@ VisualStudioVersion = 17.9.34607.119
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FerrariAwardGenerator", "FerrariAwardGenerator\FerrariAwardGenerator.csproj", "{A6AD43E6-6780-4CF8-B23A-5D1A0165AA5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FerrariAwardGenerator.Service", "FerrariAwardGenerator.Service\FerrariAwardGenerator.Service.csproj", "{942BDC84-5B5F-48A7-B266-2850A605D1F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FerrariAwardGenerator.Service", "FerrariAwardGenerator.Service\FerrariAwardGenerator.Service.csproj", "{942BDC84-5B5F-48A7-B266-2850A605D1F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FerrariAwardGenerator.Service.Tests", "FerrariAwardGenerator.Service.Tests\FerrariAwardGenerator.Service.Tests.csproj", "{80E17F0D-CB29-4D67-86F5-EC339FA5FF3C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FerrariAwardGenerator.Service.Tests", "FerrariAwardGenerator.Service.Tests\FerrariAwardGenerator.Service.Tests.csproj", "{80E17F0D-CB29-4D67-86F5-EC339FA5FF3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FerrariAwardGenerator.Ui", "FerrariAwardGenerator.Ui\FerrariAwardGenerator.Ui.csproj", "{49879588-AC98-417E-A0C7-8624B1A68E62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FerrariAwardGenerator.Ui", "FerrariAwardGenerator.Ui\FerrariAwardGenerator.Ui.csproj", "{49879588-AC98-417E-A0C7-8624B1A68E62}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
